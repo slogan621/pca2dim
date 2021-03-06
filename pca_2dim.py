@@ -17,6 +17,9 @@ import numpy as np
 import math
 
 class Data():
+    '''
+    class to hold data and perform the operations needed by this example
+    '''
     def __init__(self):
         self._x = None
         self._y = None
@@ -160,6 +163,10 @@ class Data():
         return self._mu
 
 class Outputs():
+    '''
+    class containing various output functions, generally one per
+    figure created by the example
+    '''
 
     def plotTrainingData(self, fig, data):
         '''
@@ -262,6 +269,11 @@ medium_eigenvec[1]*math.sqrt(medium_eigenval), 'g');
         print("End of the program");
 
 class Figure():
+    ''' 
+    class that abstracts an octave figure and some of its functionality,
+    such as creation, display, plots and quivers
+    '''
+
     def __init__(self, serial):
         self._figure = plt.figure(serial)
         self._serial = serial 
@@ -354,7 +366,7 @@ if __name__ == "__main__":
     main()
 
 '''
-original octave sources:
+for references, the original octave sources that inspired this port:
 
 x = load('ex2x.dat');
 y = load('ex2y.dat');

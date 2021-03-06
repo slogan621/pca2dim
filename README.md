@@ -4,7 +4,7 @@ This is a port of a matlab program that does PCA on 2 dimension data
 (age/height data for young males). It is intended only to show how 
 matlab code might be ported to Python using matplotlib and numpy packages.
 
-# How to run the examples
+# How to run the example
 
 If necessary, install required libraries using pip:
 
@@ -26,19 +26,20 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
 
+
 Next, git clone this repo:
 
 ```
-slogan@cpp-learning--virtual-machine:/tmp$ git clone https://github.com/slogan621/pca2dim.git
+$ git clone https://github.com/slogan621/pca2dim.git
 Cloning into 'pca2dim'...
-slogan@cpp-learning--virtual-machine:/tmp$
+$
 ```
 
 Then run:
 
 ```
-slogan@cpp-learning--virtual-machine:~/tmp$ cd pca2dim
-slogan@cpp-learning--virtual-machine:~/tmp/pca2dim$ python3 pca_2dim.py 
+$ cd pca2dim
+$ python3 pca_2dim.py 
 Matrix of Covariance
 [[2.92453364 0.18682262]
  [0.18682262 0.01390859]]
